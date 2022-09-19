@@ -6,7 +6,6 @@ Esta es una solución para [Interactive rating component challenge on Frontend M
 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -24,11 +23,8 @@ Los usuarios deben ser capaces de:
 ### Screenshot
 
 ![](./screenshot.png)
+![](./screenshot2.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
