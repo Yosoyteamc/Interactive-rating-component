@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Blue-light: hsl(214, 19%, 23%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.cards-content{
+    width: 375px;
+    height: 667px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-state-start, .card-state-end{
+    width: 280px;
+    height: 310px;
+    border-radius: 20px;
+    background: var(--Dark-Blue);
+    padding: 25px;
+}
+
+.card-state-start__image{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Dark-Blue-light);
+    margin-bottom: 25px;
+}
+
+.message__title{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--White);
+    margin-bottom: 25px;
+}
+
+.message__parraf{
+    color: var(--Light-Grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.rating__option{
+   background-color: var(--Dark-Blue-light);
+   width: 10px;
+   height: 10px;
+   padding: 15px;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 400;
+   color: var(--Light-Grey);
+}
+
+.rating__option:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.rating__option--selected{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.rating__button{
+    width: 100%;
+    height: 45px;
+    font-weight: 400;
+    border-radius: 20px;
+    border-style: none;
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    color: var(--White);
+    letter-spacing: 3px;
+    outline: none;
+}
+
+.rating__button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.card-state-end{
+    display: none;
+}
+
+.card-state-end__content-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-selection__image{
+    margin: 5px auto 15px auto;
+    padding: 10px;
+}
+
+.content-selection__info{
+    width: max-content;
+    background-color: var(--Dark-Blue-light);
+    color: var(--Orange);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 10px 6px;
+    border-radius: 15px;
+}
+
+.card-state-end__content-gratefulness{
+    padding-top: 20px;
+}
+
+.content-gratefulness__title{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: var(--White);
+    padding-bottom: 15px;
+
+}
+.content-gratefulness__parraf{
+    color: var(--Light-Grey);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 11px; text-align: center; 
+    color: var(--White);
+}
+
+.attribution a {
+     color: var(--Orange); 
+}
+
+@media screen and (min-width:1115px) {
+    .cards-content{
+        width: 1115px;
+    }
+
+    .card-state-start, .card-state-end{
+        width: 370px;
+        height: 365px;
+        padding: 35px;
+    }
+
+    .card-state-start__image{
+        padding: 13px;
+        margin-bottom: 40px ;
+    }
+
+    .message__title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .message__parraf{
+        font-size: 16px;
+    }
+
+    .rating{
+        padding-bottom: 30px;
+    }
+
+    .rating__option{
+        width: 16px;
+        height: 16px;
+        padding: 18px;
+        font-size: 16px;
+     }
+
+     .rating__button{
+        height: 46px;
+    }
+
+    .content-selection__image{
+        margin: 8px auto 18px auto;
+        padding: 15px;
+    }
+    
+    .content-selection__info{
+        font-size: 17px;
+    }
+
+    .card-state-end__content-gratefulness{
+        padding-top: 30px;
+    }
+    
+    .content-gratefulness__title{
+        font-size: 30px;    
+    }
+
+    .content-gratefulness__parraf{
+        font-size: 16.4px;
+    }
+}
